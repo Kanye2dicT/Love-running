@@ -20,16 +20,19 @@ font-family: 'lato', sans-serif;
 
 /*Header*/
 header{
-    color: lightcoral;
+    background-color: lightcoral;   
 }
-/*header*/
+
+h1{font-family: oswald , sans-serif;}
+
+
 
 main{
-    color: lightblue;
+    background-color: lightblue;
     /*make main element take up any surplus space to push footer down*/
     flex:1 0 auto;
 }
 /*Footer*/
 footer{
-    color: orange;
+    background-color: orange;
 }
