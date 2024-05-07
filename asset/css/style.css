@@ -115,7 +115,7 @@ header {
 
         main{
             /* push the main content down to acomodate the larger header */
-            margin-top: 79;
+            margin-top: 47;
     }
     
 
@@ -133,11 +133,18 @@ header {
     /*make main element take up any surplus space to push footer down*/
 
     main {
-        background-color: lightblue;
+        
         /*make main element take up any surplus space to push footer down*/
         flex: 1 0 auto;
-        margin-top: 47px;
+        margin-top: 79px;
     }
+/* hero background */
+
+#hero {background: url(../images/hero-image.webp) 
+    no-repeat center center/cover;
+height: 600px;
+width: 100%;}
+
 
     /* Footer */
     /* giving space to social networks */
