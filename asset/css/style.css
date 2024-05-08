@@ -121,19 +121,15 @@ header {
             margin-top: 79px; 
         }
 
-
         /* hero */
 
     #cover-text {
         width: 300px;
         right: 50px;
     }
-        
-    }    
+}    
     
     
-
-   
     
 
      /* large screens labtops and larger (992px and up)*/
@@ -177,10 +173,38 @@ position: relative;}
     color: #ffffff;
 }
 
+#reason { margin:auto 20px;
+    width: 90%;
+}
+#reason h2 {font-size: 280%;
+margin-bottom: 20px;
+text-align: center;
+}
+#benefits-physical > div , #benefits-mental > div {line-height: 20px; 
+margin-bottom: 20px;}
+
+#benefits p {padding: 0 20px;}
+hr {border-top: 1px solid #3a3a3a;
+margin: 5px 0;}
+
+#circle-cover-bg {background: url("../images/reasons-image.webp") no-repeat top center / cover;
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 20px;
+/* turns the squre into a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;}
+
+    #benefits-image {display: flex;
+    align-content: center;
+    justify-content: center;}
+
+
     /* Footer */
     /* giving space to social networks */
 
-    #social-networks .i {
+    #social-networks i {
         font-size: 160%;
         padding: 5%;
         color: #3a3a3a;
