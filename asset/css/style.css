@@ -26,6 +26,7 @@ h1, h2, h3 {
     letter-spacing: 2px;
     color: #252525;
 }
+#hidden-heading {display: none;}
 
 
 /* Header */
@@ -114,8 +115,8 @@ header a {
     width: 80%;
 }
  
-#cover-text> h2, 
-#cover-text > h3 {
+#cover-text>h2, 
+#cover-text>h3 {
     color: #ffffff;
 }
 
@@ -127,10 +128,10 @@ header a {
 #reasons h2 {
     font-size: 280%;
     margin-bottom: 20px;
-    text-align: center;
+    text-align:center;
 }
-#benefits-physical> div, 
-#benefits-mental> div {
+#benefits-physical>div, 
+#benefits-mental>div {
     line-height: 20px; 
     margin-bottom: 20px;
 }
@@ -159,9 +160,10 @@ header a {
     /* meet-up section */
      
     #times {
-        background: url('../images/dublin-city.webp') no-repeat center / cover;
+        background: url('../images/dublin-city.webp') no-repeat center/cover;
          display: flex;
-         flex-wrap: wrap;}
+         flex-wrap: wrap;
+        }
 
     #times div {
         color: #fafafa;
@@ -169,14 +171,20 @@ header a {
         padding: 15px;
         text-align: center;
        /* this would grow only when space avialble exceeds 400px */
-        flex-basis: 200%;
+        flex-basis: 200px;
         flex-grow: 1;
-        border: 2px solid white;
-           /* creates a white grid over the dives */
-        
+          /* creates a white grid over the dives */
+        border: 2px solid white;    
     }
 
     #times h3 {color: #fafafa;}
+
+    #photos img{
+        width: 100%;
+        line-height: 0;
+    }
+
+    #photos{line-height: 1;}
 
 
 
@@ -212,7 +220,7 @@ header a {
     {
         display: flex;
     }
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -240,6 +248,7 @@ header a {
 }   
 
 /* reasons section */
+
 #benefits-physical, 
 #benefits-mental {   
     display: flex;
@@ -247,8 +256,8 @@ header a {
     width: 100%;
 }
 
-    #benefits-physical > div , 
-    #benefits-mental > div {width: 75%;}
+    #benefits-physical>div , 
+    #benefits-mental>div {width: 75%;}
 
     #benefits-mental {text-align: end;
     align-self: flex-end;}
@@ -270,7 +279,7 @@ header a {
         flex-direction: row;
     }
 
-    #benefits > div {
+    #benefits>div {
         flex: 1;
     }
 
@@ -282,10 +291,10 @@ header a {
         order: 1;
     }
 
-    #benefits-mental > div {
+    #benefits-mental>div {
         align-self: flex-start;
     }
-    #benefits-physical > div {
+    #benefits-physical>div {
         align-self: flex-end;
     }
 }
