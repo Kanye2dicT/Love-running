@@ -178,13 +178,16 @@ header a {
     }
 
     #times h3 {color: #fafafa;}
+  
 
-    #photos img{
+/* gallery page */
+
+    #photos img {
         width: 100%;
-        line-height: 0;
+        line-height: 1em;
     }
 
-    #photos{line-height: 1;}
+    #photos {line-height: 0;}
 
 
 
@@ -205,32 +208,7 @@ header a {
     list-style-type: none;
     }
 
-  /* media screens tablet and larger (768px and higher) */
 
-  @media screen and (min-width: 768px) {
-        
-    nav {
-    display: block;
-    position: relative;
-    box-shadow: none;
-    width: fit-content;
-    padding-right: 1rem;} 
-
-    #menu 
-    {
-        display: flex;
-    }
-    #menu>li {
-        padding-left: 1rem;
-    }
-
-    .nav-toggle-label {display: none;}
-    /* increase the logo size */
-
-     #logo{
-    font-size: 280%;
-    margin-right: 0 0.5rem;
-    line-height: 75px;}
 
     /* main content*/
 
@@ -245,7 +223,7 @@ header a {
     width: 300px;
     right: 50px;
 }
-}   
+   
 
 /* reasons section */
 
@@ -262,15 +240,60 @@ header a {
     #benefits-mental {text-align: end;
     align-self: flex-end;}
 
+
+    /* media screens tablet and larger (576px and higher) */
+   /* gallery */
+      @media screen and (min-width: 576px) {
+        #photos {
+        column-count: 2;
+        column-gap: 0;}
+ }
   
+ 
+ 
+ 
+   /* media screens tablet and larger (768px and higher) */
+    @media screen and (min-width: 768px) {
+         
+     nav {
+     display: block;
+     position: relative;
+     box-shadow: none;
+     width: fit-content;
+     padding-right: 1rem;} 
+ 
+     #menu 
+     {
+         display: flex;
+     }
+     #menu>li {
+         padding-left: 1rem;
+     }
+ 
+     .nav-toggle-label {display: none;}
+     /* increase the logo size */
+ 
+      #logo{
+     font-size: 280%;
+     margin-right: 0 0.5rem;
+     line-height: 75px;}
+     
+         /* gallery */
+     
+    #photos {column-count: 3;}
+      }
+
     /* large screens labtops and larger (992px and up)*/
       
   @media screen and (min-width: 992px) {
     #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
    }
-
+   #photos {column-count: 4;}
 }
+/* gallery */
+     
+
   
 @media screen and (min-width: 1200px) {    
     /* Reasons section */
